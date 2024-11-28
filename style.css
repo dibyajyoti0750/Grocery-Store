@@ -1,0 +1,82 @@
+body {
+  font-family: "Merriweather Sans", sans-serif !important;
+}
+
+.nav-icon {
+  font-size: 1.75rem;
+  color: black;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider_item-detail h1 {
+  font-weight: 900;
+  font-size: 3rem !important;
+  width: 95%;
+  margin-top: 1rem;
+}
+
+.slider_item-detail p {
+  margin: 1.5rem 0 !important;
+}
+
+.slider_img-box img {
+  margin-top: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.card-img-top {
+  border-radius: 0.3rem;
+}
+
+.card-body {
+  padding-bottom: 0;
+}
+
+.price {
+  color: #4b5563;
+  opacity: 0.8;
+}
+
+.featured-products {
+  background-color: rgb(243 244 246);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: grey !important;
+  opacity: 0.8 !important;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: grey !important;
+}
