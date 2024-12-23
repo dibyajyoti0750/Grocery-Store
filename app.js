@@ -66,13 +66,18 @@ const themeToggle = document.querySelector("#themeToggle");
 
 themeToggle.addEventListener("change", () => {
   document.body.classList.toggle("dark-theme");
+
+  // Toggle other elements based on the body class
   document.querySelector(".navbar").classList.toggle("dark-theme");
-  document.querySelector(".nav-title").classList.toggle("nav-title-dark-theme");
-  document.querySelectorAll(".card").forEach((card) => {
-    card.classList.toggle("dark-theme");
-  });
-  document.querySelectorAll(".btn-outline-success").forEach((btn) => {
-    btn.classList.toggle("dark-theme");
-  });
   document.querySelector(".featured-products").classList.toggle("dark-theme");
+
+  // Apply dark theme for cards and buttons by targeting classes
+  document
+    .querySelectorAll(".card, .btn-outline-success")
+    .forEach((element) => {
+      element.classList.toggle("dark-theme");
+    });
+
+  // Specific toggle for nav-title
+  document.querySelector(".nav-title").classList.toggle("nav-title-dark-theme");
 });
